@@ -12,7 +12,7 @@ __Vectors
 SRAM_BASE EQU 0x04000000
             AREA    MYCODE, CODE, READWRITE
             ENTRY
-			EXPORT Reset_Handler
+	    EXPORT Reset_Handler
 Reset_Handler
 ; Constants
 MAX_STUDENTS EQU 10
@@ -115,8 +115,8 @@ welcomeMessage: DCB "Welcome to the Attendance System", 10
                 DCB 0 ; Null terminator
 studentIDMessage: DCB "Student ID: ", 0 ; Null terminator
 attendancePresentMessage: DCB "Present", 10
-					      DCB 0 ; Null terminator
+			  DCB 0 ; Null terminator
 attendanceAbsentMessage: DCB "Absent", 10
-						 DCB 0 ; Null terminator
+			 DCB 0 ; Null terminator
 attendancePromptMessage: DCB "Enter attendance (1 for present, 0 for absent): ", 0 ; Null terminator
 ; End 
